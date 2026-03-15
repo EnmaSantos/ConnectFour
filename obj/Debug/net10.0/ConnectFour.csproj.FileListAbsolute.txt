@@ -170,3 +170,4 @@
 /Users/enmanueldelossantoscruz/Documents/Projects/CSE 325/ConnectFour/obj/Debug/net10.0/ConnectFour.pdb
 /Users/enmanueldelossantoscruz/Documents/Projects/CSE 325/ConnectFour/obj/Debug/net10.0/ConnectFour.genruntimeconfig.cache
 /Users/enmanueldelossantoscruz/Documents/Projects/CSE 325/ConnectFour/obj/Debug/net10.0/ref/ConnectFour.dll
+/Users/enmanueldelossantoscruz/Documents/Projects/CSE 325/ConnectFour/obj/Debug/net10.0/ConnectFour.sourcelink.json

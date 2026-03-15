@@ -40,7 +40,7 @@ public class GameState
         {
             if (TheBoard[column, i] == 0)
             {
-                landingRow = i;
+                landingRow = i + 1;
                 TheBoard[column, i] = PlayerTurn;
                 break;
             }
