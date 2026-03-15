@@ -14,12 +14,15 @@ public class GameState
 
     public int CurrentTurn { get; private set; } = 0;
 
+    public List<string> MoveHistory { get; private set; } = new();
+
     private int[,] TheBoard { get; set; } = new int[7, 6];
 
     public void ResetBoard()
     {
         PlayerTurn = 1;
         CurrentTurn = 0;
+        MoveHistory.Clear();
         TheBoard = new int[7, 6];
     }
 
@@ -45,6 +48,8 @@ public class GameState
                 break;
             }
         }
+        var colorName = PlayerTurn == 1 ? "Red" : "Blue";
+        MoveHistory.Insert(0, $"Player {PlayerTurn} ({colorName}) dropped a piece in Column {column + 1}");
 
         PlayerTurn = PlayerTurn == 1 ? 2 : 1;
         CurrentTurn++;
